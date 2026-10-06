@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML perusteet</title>
+  </head>
+  <body>
+    <h1>HTML Perusteet</h1>
+    <h3>Miten tyhjän tagin käyttö eroaa muiden tagien käytöstä?</h3>
+    <p>Tyhjässä tagissä aloittava sekä lopettava tagi ovat yhdessä esimerkiksi: rivin vaihto tagi "br".</p>
+    <h3>Mitä Case sensitive tarkoittaa?</h3>
+    <p>Case sensitive tarkoittaa sanojen kirjaimien koon merkitystä.</p>
+    <h1>Otsikko 1</h1>
+    <h2>Otsikko 2</h2>
+    <h3>Otsikko 3</h3>
+    <p>Kappale</p>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Italialainen trulli">
+    <ul>
+        <li>Kahvi</li>
+        <li>Tee</li>
+        <li>Maito</li>
+    </ul>
+    <p><a href="https://www.salpaus.fi/">Vieraile Salpauksen sivuilla!</a></p>
+    <p><a href="portfolio.html">portfolio</a></p>
+    <style>
+        .myDiv {
+            border: 5px outset green;
+            background-color: darkblue;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="myDiv">
+    <h2>Testailua</h2>
+    </div>
+    </body>
+
+    <h2>Tekstikentät</h2>
+
+    <p>Syötä nimesi</p>
+    <form>
+        <label for="fname">Etunimi:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Sukunimi:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+    </form>
+
+    <h2>Radiopainikkeet</h2>
+
+    <p>Valitse lempikielesi nettisivujen kehittämiseen:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for=""html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+    </form>
+
+    <h2>Valintaruudut</h2>
+    <p>Mitä ajoneuvoa sinulla on?</p>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Moottoripyörä">
+    <label for="vehicle1"> Moottoripyörä</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Auto">
+    <label for="vehicle2"> Auto</label><br> 
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Vene">
+    <label for="vehicle3"> Vene</label>
+    </form>
+
+  </body>
+</html>
