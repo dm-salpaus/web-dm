@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteydenottolomake</title>
+</head>
+
+<body>
+    <h1>Yhteydenottolomake</h1>
+    <p>Hei, olen Daniel. Opiskelen tieto- ja viestintäteknologian alaa.</p>
+    <h2>Ota yhteyttä:</h2>
+
+    <form action="submit_form.php" method="post">
+        <label for="name">Nimi:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Sähköposti:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+    </form action="submit_form.php" method="post">
+    <label for="password">Salasana:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    </form action="submit_form.php" method="post">
+    <label for="phone">Puhelinnumero:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    </form>
+    <input type="radio" id="gender_male" name="gender" value="male" required>
+    <label for="gender_male">Mies</label><br>
+    <input type="radio" id="gender_female" name="gender" value="female" required>
+    <label for="gender_female">Nainen</label><br><br>
+    <input type="radio" id="gender_other" name="gender" value="other" required>
+    <label for="gender_other">Muu</label><br><br>
+
+    <form>
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Haluan tilata uutiskirjeen</label><br><br>
+
+    </form action="/action_page.php">
+    <label for="cars">Valitse auto:</label><br>
+    <select id="cars" name="cars" required>
+        <option value="">--Valitse--</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select><br><br>
+
+    <label for="message">Viesti:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <input type="submit" value="Lähetä">
+
+    <h3>Mihin form-tagia käytetään?</h3>
+    <p>Sitä käytetään lomakkeiden luomiseen, jotta käyttäjä voi syöttää tietoja.</p>
+    <h3>Mitä input-tagilla voidaan tehdä?</h3>
+    <p>Sillä saadaan esiin eri tyyppisiä syöttökohteita, kuten tekstikenttiä, valintakenttiä ja painikkeita.</p>
+    <h3>Mitä eroa on text, email ja number-tyyppisillä input-kentillä?</h3>
+    <p>Text-kenttä hyväksyy kaikenlaista tekstiä, email-kenttä tarkistaa, että syötetty arvo on sähköpostiosoite, ja number-kenttä hyväksyy vain numeroita.</p>
+    <h3>Mihin label-tagia käytetään?</h3>
+    <p>Sitä käytetään syöttökenttien otsikoiden määrittämiseen, jotta käyttäjä tietää, mitä tietoa hänen tulee syöttää.</p>
+    <h3>Mitä checkbox tekee?</h3>
+    <p>Sillä saadaan esiin valintakenttiä, joiden avulla käyttäjä voi valita yhden tai useita vaihtoehtoja.</p>
+    <h3>Mitä radio-painikkeilla voidaan tehdä?</h3>
+    <p>Niiden avulla käyttäjä voi valita yhden useimmista vaihtoehtoista.</p>
+
+</body>
+
+</html>
