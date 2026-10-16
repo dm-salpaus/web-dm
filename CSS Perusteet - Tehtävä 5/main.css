@@ -1,4 +1,28 @@
 .linkit {
-    border: solid black;
-    background-color: red;
+    border: solid rgba(0, 0, 0, 0.549);
+    background-color: rgb(146, 255, 88);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+   display: block;
+   color:rgb(255, 43, 43);
+   padding-left: 50px;
+   text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: blue;
+    float:left;
 }
