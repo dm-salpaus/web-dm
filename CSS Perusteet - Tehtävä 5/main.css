@@ -23,6 +23,15 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: blue;
+    background-color: rgb(0, 140, 148);
     float:left;
+    color: rgb(229, 255, 0);
+}
+
+#text {
+    text-align: center;
+}
+
+#kuvat {
+    margin-left: 30%;
 }
