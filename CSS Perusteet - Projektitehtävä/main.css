@@ -31,11 +31,14 @@ text-align: center;
 }
 
 h2 {
-    font-size: medium;
-    font-style: italic;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: white;
-padding-left: 10px;
+font-size: medium;
+font-style: italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #ffffff;
+background-color: rgb(42, 131, 95);
+text-align: center;
+width: 300px;
+
 }
 
 h3, p {
@@ -47,4 +50,19 @@ h3, p {
 body {
     margin: 0;
     background-color: rgb(139, 187, 146);
+}
+
+.text {
+    width: 300px;
+    margin: auto;
+    background-color: rgba(42, 131, 95, 0.362);
+    float: left;
+}
+
+.images {
+    background-color: rgb(42, 131, 95);
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px 75px 10px;
+    margin: auto;
 }
