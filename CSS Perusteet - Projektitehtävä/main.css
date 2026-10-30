@@ -38,6 +38,12 @@ color: white;
 padding-left: 10px;
 }
 
+h3, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+
+}
+
 body {
     margin: 0;
     background-color: rgb(139, 187, 146);
