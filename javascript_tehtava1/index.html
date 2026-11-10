@@ -14,13 +14,19 @@
     <p id="demo1">Alkuperäinen teksti</p>
     <button type="button" onclick="changeColor()">Klikkaa tästä vaihtaaksesi tekstin väriä</button>
     <button type="button" onclick="changeText()">Klikkaa tästä muuttaaksesi sisältöä</button>
+    <button type="button" onclick="changeText()">Ennen v.2008</button>
+    <button type="button" onclick="changeText()">2008 Jälkeen</button>
 
     <h4>Miten var, let, const eroaa toisistaan?</h4>
     <p>"var" toimii funktion sisällä, kun taas "let" ja "const" toimivat lohkoissa.<br>
         "let"- ja "var"-muuttujiin pystytään sijoittamaan uusia arvoja.<br>
         "const" toimii samalla tavalla kuin "let", mutta sen arvo ei voi muuttua.
-    
     </p>
+
+    <p id="demo2"></p>
+
+    
+
     <script>
 
         // lisää napin joka muuttaa tekstin värin punaiseksi
@@ -33,7 +39,16 @@
             document.getElementById("demo1").innerHTML = "Muuttunut teksti";
         }
 
-        
+        const age = new Date().getFullYear();
+        let ageverification;
+
+        if (age < 18) {
+            ageverification = "Alaikäinen";
+        } else {
+            ageverification = "Täysi-ikäinen";
+        }
+
+        document.getElementById("demo2").innerHTML = ageverification;
     </script>
 </body>
 
