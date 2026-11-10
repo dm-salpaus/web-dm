@@ -1,19 +1,91 @@
   body {
-            background-color: aquamarine;
-        }
+    background-color: rgb(55, 89, 109);
+  }
 
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-            text-align: center;
-        }
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(0, 255, 76);
+    text-align: center;
+  }
 
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            text-align: center;
-        }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    text-align: center;
+  }
 
-#laatikko {
+  @media only screen and (max-width: 600px) {
+    #div1 {
+      background-color: rgb(0, 255, 255);
+      padding: 10px;
+      width: 100px;
+      height: auto;
+      margin: 20px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
 
-}
+  @media only screen and (min-width: 1200px) {
+  #div2 {
+    background-color: red;
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .example {
+    padding: 20px;
+    color: white;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .example {
+      background: red;
+    }
+
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {
+      background: green;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {
+      background: blue;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {
+      background: orange;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {
+      background: pink;
+    }
+  }
+
+  #div1:hover {
+    border-radius: 25px;
+  }
+
+  #div2:hover {
+    border-radius: 25px;
+  }
