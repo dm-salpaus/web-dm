@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Javascript - Tehtävä 1</title>
+</head>
+
+<body>
+    <h2>Javascript - Tehtävä 1</h2>
+    <h5>Daniel Mäkelä</h5>
+
+    <p id="demo">Kappaleen tekstin väri muuttuu</p>
+    <p id="demo1">Alkuperäinen teksti</p>
+    <button type="button" onclick="changeColor()">Klikkaa tästä vaihtaaksesi tekstin väriä</button>
+    <button type="button" onclick="changeText()">Klikkaa tästä muuttaaksesi sisältöä</button>
+
+    <h4>Miten var, let, const eroaa toisistaan?</h4>
+    <p>"var" toimii funktion sisällä, kun taas "let" ja "const" toimivat lohkoissa.<br>
+        "let"- ja "var"-muuttujiin pystytään sijoittamaan uusia arvoja.<br>
+        "const" toimii samalla tavalla kuin "let", mutta sen arvo ei voi muuttua.
+    
+    </p>
+    <script>
+
+        // lisää napin joka muuttaa tekstin värin punaiseksi
+        function changeColor() {
+            document.getElementById("demo").style.color = 'red';
+        }
+
+        // lisää napin joka muuttaa kappaleen sisältöä
+        function changeText() {
+            document.getElementById("demo1").innerHTML = "Muuttunut teksti";
+        }
+
+        
+    </script>
+</body>
+
+</html>
