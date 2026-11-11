@@ -20,24 +20,29 @@
     <p id="erotus2"></p>
     <p id="tulo2"></p>
     <p id="jako2"></p>
+    <p id="kuluneetvuodet"></p>
 
     <script>
         document.getElementById("nimi").innerHTML = "<h4>Daniel Mäkelä</h4>";
         document.getElementById("ika").innerHTML = "<h4>26-vuotias</h4>";
         document.getElementById("opiskelupaikka").innerHTML = "<h4>Koulutuskeskus Salpaus</h4>";
         
+        // lisää etunimen ja tulostaa sen sivulle
         let firstName = "Daniel";
 
         document.getElementById("etunimi").innerHTML = firstName;
 
+        // lisää iän ja tulostaa sivulle
         let age = "26";
 
         document.getElementById("ika2").innerHTML = age;
 
+        // lisää paikkakunnan ja tulostaa sivulle
         let region = "Lahti";
 
         document.getElementById("paikkakunta").innerHTML = region;
 
+        // lasku jonka summa on 25
         {
         let x = 12.5;
         let y = 12.5;
@@ -45,6 +50,7 @@
         document.getElementById("summa").innerHTML = z;
         }
 
+        // lasku jonka vähennys on yhtä kuin 25
         {
         let x = 50;
         let y = 25;
@@ -52,6 +58,7 @@
         document.getElementById("erotus").innerHTML = z;
         }
 
+        // kertolasku jonka lopputulos on 25
         {
         let x = 5;
         let y = 5;
@@ -59,6 +66,7 @@
         document.getElementById("tulo").innerHTML = z;
         }
 
+        // jakolasku jonka lopputulos on 25
         {
         let x = 100;
         let y = 4;
@@ -66,7 +74,7 @@
         document.getElementById("jako").innerHTML = z;
         }
 
-        
+        // lasku jonka summa on 7
         {
         let x = 3.5;
         let y = 3.5;
@@ -74,6 +82,7 @@
         document.getElementById("summa2").innerHTML = z;
         }
 
+        // lasku jonka vähennys on yhtä kuin 7
         {
         let x = 14;
         let y = 7;
@@ -81,6 +90,7 @@
         document.getElementById("erotus2").innerHTML = z;
         }
 
+        // kertolasku jonka lopputulos on 7
         {
         let x = 3.5;
         let y = 2;
@@ -88,6 +98,7 @@
         document.getElementById("tulo2").innerHTML = z;
         }
 
+        // jakolasku jonka lopputulos on 25
         {
         let x = 70;
         let y = 10;
@@ -95,6 +106,13 @@
         document.getElementById("jako2").innerHTML = z;
         }
 
+        // kuinka monta vuotta on kulunut vuodesta 2000
+        {
+            let x = 2026;
+            let y = 2000;
+            let z = x - y;
+            document.getElementById("kuluneetvuodet").innerHTML = z + " vuotta kulunut";
+        }
         
 
 
