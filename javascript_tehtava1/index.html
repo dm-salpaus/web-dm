@@ -14,8 +14,8 @@
     <p id="demo1">Alkuperäinen teksti</p>
     <button type="button" onclick="changeColor()">Klikkaa tästä vaihtaaksesi tekstin väriä</button>
     <button type="button" onclick="changeText()">Klikkaa tästä muuttaaksesi sisältöä</button>
-    <button type="button" onclick="changeText()">Ennen v.2008</button>
-    <button type="button" onclick="changeText()">2008 Jälkeen</button>
+    <button type="button" onclick="checkAge(15)">Ennen v.2008</button>
+    <button type="button" onclick="checkAge(25)">2008 Jälkeen</button>
 
     <h4>Miten var, let, const eroaa toisistaan?</h4>
     <p>"var" toimii funktion sisällä, kun taas "let" ja "const" toimivat lohkoissa.<br>
@@ -24,8 +24,12 @@
     </p>
 
     <p id="demo2"></p>
-
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
     
+
+
 
     <script>
 
@@ -38,17 +42,48 @@
         function changeText() {
             document.getElementById("demo1").innerHTML = "Muuttunut teksti";
         }
+        // lisää napin joka tarkistaa iän
+        function checkAge(personAge) {
+            const age = personAge;
+            let ageverification;
 
-        const age = new Date().getFullYear();
-        let ageverification;
+            if (age < 18) {
+                ageverification = "Alaikäinen";
+            } else {
+                ageverification = "Täysi-ikäinen";
+            }
 
-        if (age < 18) {
-            ageverification = "Alaikäinen";
-        } else {
-            ageverification = "Täysi-ikäinen";
+            document.getElementById("demo2").innerHTML = ageverification;
         }
 
-        document.getElementById("demo2").innerHTML = ageverification;
+       let text = "";
+       let i = 0;
+       while (i < 5) {
+        text += "Huhuu?!" + "<br>";
+        i++;
+       
+       document.getElementById("demo3").innerHTML = text;
+       }
+
+       const animals = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
+       let len = animals.length;
+
+       let elaimet = "";
+       for (let i = 0; i < len; i++) {
+        elaimet += animals[i] + "!" + "<br>";
+       
+       document.getElementById("demo4").innerHTML = elaimet;
+       }
+       
+       function fullName(firstName, lastName) {
+        return firstName + " " + lastName;
+       }
+
+       let name = fullName("Daniel", "Mäkelä");
+
+       document.getElementById("demo5").innerHTML = "Hei " + name;
+
+
     </script>
 </body>
 
