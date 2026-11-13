@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript perusteet - Tehtävä 3</title>
+    </head>
+    <body>
+        <h2>Javascript perusteet - Tehtävä 3</h2>
+        <p id="temperature"></p>
+        <p id="number"></p>
+        <script>
+            const lampotila = -5;
+            let temp;
+            if (lampotila < 0) {
+                temp = "Pakkasta";
+            } else {
+                temp = "Ei pakkasta";
+            }
+
+            const numero = 15;
+            let num;
+            if (numero < 10) {
+                num = "Pieni numero";
+            } else {
+                if (numero <= 20) {
+                    num = "Keskikokoinen numero";
+                } else {
+                    if (numero > 20) {
+                        num = "Suuri numero";
+                    }
+                }
+            }
+
+
+
+
+            document.getElementById("temperature").innerHTML = temp;
+            document.getElementById("number").innerHTML = num;
+        </script>
+    </body>
+</html>
