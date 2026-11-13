@@ -8,6 +8,7 @@
         <h2>Javascript perusteet - Tehtävä 3</h2>
         <p id="temperature"></p>
         <p id="number"></p>
+        <p id="password"></p>
         <script>
             const lampotila = -5;
             let temp;
@@ -31,11 +32,22 @@
                 }
             }
 
+            const salasana = "hikke1337";
+            let pass;
+            if (salasana === "javascript123") {
+                pass = "Salasana oikein";
+            } else {
+                pass = "Salasana väärin";
+            }
+
+
 
 
 
             document.getElementById("temperature").innerHTML = temp;
             document.getElementById("number").innerHTML = num;
+            document.getElementById("password").innerHTML = pass;
+            
         </script>
     </body>
 </html>
