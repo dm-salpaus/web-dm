@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript perusteet - Tehtävä 4</title>
+    </head>
+    <body>
+        <h2>Javascript perusteet - Tehtävä 4</h2>
+        <p id="name"></p>
+        <p id="age"></p>
+        <p id="asknumbers"></p>
+        <p id="askbirthyear"></p>
+        <button onclick="askName()">Syötä etunimesi</button>
+        <button onclick="askAge()">Syötä ikäsi</button>
+        <button onclick="askNumbers()">Syötä kaksi numeroa</button>
+        <button onclick="askBirthyear()">Syötä syntymävuosi</button>
+        <script>
+
+            function askName() {
+                let text;
+                let person = prompt("Mikä on etunimesi?");
+                if (person == null || person == "") {
+                    text = "Käyttäjä perui toiminnon."; 
+                } else {
+                    text = "Hei " + person + "!";
+                }
+                document.getElementById("name").innerHTML = text;
+            }
+            function askAge() {
+                let text;
+                let age = prompt("Mikä on ikäsi?");
+                if (age == null || age == "") {
+                    text = "Käyttäjä perui toiminnon."; 
+                } else {
+                    text = "Olet " + age + " -vuotias!";
+                }
+                document.getElementById("age").innerHTML = text;
+            }
+            function askNumbers() {
+                let number = prompt("Kirjoita numero.") | null;
+                let number2 = prompt("Kirjoita toinen numero.") | null;
+
+                
+                let result = number + number2;
+                document.getElementById("asknumbers").innerHTML = result;
+            }
+
+            function askBirthyear() {
+                let text;
+                let year = prompt("Syötä syntymävuosi.") |null;
+                let estimatedage = 2026 - year;
+                document.getElementById("askbirthyear").innerHTML = estimatedage;
+
+            }
+
+
+        </script>
+    </body>
+</html>
