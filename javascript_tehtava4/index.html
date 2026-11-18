@@ -48,7 +48,7 @@
             function askBirthyear() {
                 let text;
                 let year = prompt("Syötä syntymävuosi.") |null;
-                let estimatedage = 2026 - year;
+                let estimatedage = "Arvion mukaan olet " + (2026 - year) + " -vuotta vanha.";
                 document.getElementById("askbirthyear").innerHTML = estimatedage;
 
             }
