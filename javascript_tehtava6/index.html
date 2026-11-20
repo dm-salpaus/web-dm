@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Tehtävä 6</title>
+    </head>
+    <body>
+        <h2>Javascript - Tehtävä 6</h2>
+        <h3>Koko taulukko.</h3>
+        <p id="autot"></p>
+        <h3>Ensimmäinen ja viimeinen auto taulukosta.</h3>
+        <p id="ekavika"></p>
+        <h3>Lisätty uusi auto ja poistettu taulukon ensimmäinen auto, samalla siirretty kaikki autot alempaan indeksiin.</h3>
+        <p id="wat"></p>
+        <h3>Käytetty for-loop toimintoa</h3>
+        <p id="forloop"></p>
+        <script>
+            const cars = ["Volvo", "Toyota", "Ford", "Volkswagen", "Mercedes"];
+            document.getElementById("autot").innerHTML = cars; // tulostaa kaikki autot taulukkoon
+            document.getElementById("ekavika").innerHTML = cars[0] + " " + cars[4]; // tulostaa ensimmäisen ja viimeisen auton taulukkoon
+            cars.push("Nissan"); // lisää uuden auton "Nissan" taulukon loppuun
+            cars.shift(); // poistaa taulukon ensimmäisen auton ja siirtää kaikki autot alempaan indeksiin
+            document.getElementById("wat").innerHTML = cars;
+            
+            let len = cars.length;
+
+            let text = "";
+            for (let i = 0; i < len; i++) {
+                text += cars[i] + " on auto" + "<br>";
+            }
+            document.getElementById("forloop").innerHTML = text;
+        </script>
+    </body>
+</html>
