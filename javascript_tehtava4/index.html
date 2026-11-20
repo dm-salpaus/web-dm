@@ -36,30 +36,19 @@
                 }
                 document.getElementById("age").innerHTML = text;
             }
+
             function askNumbers() {
-                let number = prompt("Kirjoita numero.");
-                if (number == null || number == "") {
-                    result = "Käyttäjä perui toiminnon."; 
-                } else {
-                let number2 = prompt("Kirjoita toinen numero.");
-                if (number2 == null || number2 == "") {
-                    result = "Käyttäjä perui toiminnon."; 
-                } else {
-            
+                let number = prompt("Kirjoita numero.") | null;
+                let number2 = prompt("Kirjoita toinen numero.") | null;
+
                 let result = number + number2;
-                }
                 document.getElementById("asknumbers").innerHTML = result;
             }
-        }
 
             function askBirthyear() {
                 let text;
                 let year = prompt("Syötä syntymävuosi.") |null;
-                if (age == null || age == "") {
-                    text = "Käyttäjä perui toiminnon."; 
-                } else {
-                let estimatedage = "Arvion mukaan olet " + (2026 - year) + " -vuotta vanha.";
-                }
+                let estimatedage = 2026 - year;
                 document.getElementById("askbirthyear").innerHTML = estimatedage;
 
             }
