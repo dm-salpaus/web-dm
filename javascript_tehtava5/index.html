@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript perusteet - Tehtävä 5</title>
+    </head>
+    <body>
+        <h2>Javascript perusteet - Tehtävä 5</h2>
+        <p id="tervehdys"></p>
+        <p id="lasku"></p>
+
+        <script>
+            function tervehdi() {
+                return "Tervetuloa JavaScriptin pariin!";
+            }
+
+            let message = tervehdi();
+
+            document.getElementById("tervehdys").innerHTML = message;
+
+            function laskeSumma(a, b) {
+                return a + b;
+            }
+            let sum1 = laskeSumma(5, 5);
+            let sum2 = laskeSumma(50, 50);
+            document.getElementById("lasku").innerHTML = "Summien arvot ovat " + sum1 + " ja " + sum2;
+        </script>
+
+    </body>
+
+</html>
